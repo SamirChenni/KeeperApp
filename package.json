@@ -1,0 +1,23 @@
+{
+  "name": "keeper-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd backend && nodemon server.js",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "passport-local-mongoose": "^9.0.1",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.9.7"
+  }
+}

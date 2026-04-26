@@ -1,0 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  padding: 0 16px;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px; 
+  margin: 16px;
+  float: left;
+}
+.note h1  {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note input ,.note textarea{
+  width: 100%; 
+  border: none; 
+  outline: none;
+  font-size: 1.1em;
+  font-family: inherit;
+  resize: none;  
+  overflow: hidden; 
+  margin-bottom: 6px;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13; 
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  width: fit-content;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+/* Login Styles */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.login-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* Ensure padding on the right so text doesn't overlap the eye icon */
+.input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 40px; /* left and right padding of 40px */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #f5ba13; /* Changes the border color on click */
+  outline: none;        /* Removes the default browser black/blue outline */
+  box-shadow: 0 0 5px rgba(245, 186, 19); 
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+
+.form-options {
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+
+.forgot-password {
+  color: #666;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #f5ba13;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #e2a90f;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.login-header img {
+  width: 150px; 
+}
+
+.login-header h1 { 
+  margin-bottom: 1rem;
+}
+
+
+.separator {
+  margin: 1.5rem 0;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.separator span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 0 10px;
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.google-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.google-btn img {
+  width: 20px;
+}
+
+.noline
+{
+  text-decoration: none;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  display: flex;
+  align-items: center;
+}
+
+.eye-icon:hover {
+  color: #333;
+}
+
+
+.signup-link
+{
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.error-message
+{
+  margin-bottom: 1rem;
+  background: #ffe6e6;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ffcccc;   
+  animation: shake 0.2s ease-in-out 0s 2;
+}
+
+@keyframes shake {
+  0% { margin-left: 0rem; }
+  25% { margin-left: 0.5rem; }
+  75% { margin-left: -0.5rem; }
+  100% { margin-left: 0rem; }
+}
