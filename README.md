@@ -10,7 +10,7 @@ application.
                                             2-npm run client
   -backend: 1-cd ./backend
             2- nodemon ./server.js
-
+4/Download mongoDB Atlas from mongodb official website.
 Some problems I've faced during development : 
 *At the signup : when I add a new user and pressing sign up button , nothing happened (it didn't redirect me to the dashboard)
 Solution : It was dependecies issue , I was using Incompatible versions of mongoose (9.x) and passport-local-mongoose (9.0.1) , so to solve it 
@@ -21,6 +21,7 @@ const path = require("path");
 app.get(/^(?!\/api\/).+/, (req, res) => {
   res.sendFile(path.join(__dirname,".." , "frontend", "index.html"));
 });
+
 -at index.html , at the head add this : 
 <script type="module">
       import RefreshRuntime from "http://localhost:5173/@react-refresh";
