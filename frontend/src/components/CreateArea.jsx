@@ -27,7 +27,7 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form   className="create-note">
+      <form className="create-note">
         {isClicked && (<input
           onChange={handleChange}
           name="title"

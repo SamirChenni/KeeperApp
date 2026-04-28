@@ -67,22 +67,24 @@ function Dashboard() {
   }
 
   return (
-    <div>
+    <div className="dashboard-container">
       <Header />
       <CreateArea handleClick={addNote} />
-      {notes.map((item) => (
-        <Note
-          key={item._id}
-          id={item._id}
-          title={item.title}
-          content={item.content}
-          deleteClick={deleteNote}
-          updateClick={updateNote}
-          isEditable={editableId === item._id}
-          cancelUpdate={cancelUpdate}
-          saveUpdate={saveUpdate}
-        />
-      ))}
+      <div className="notes-wrapper">
+        {notes.map((item) => (
+          <Note
+            key={item._id}
+            id={item._id}
+            title={item.title}
+            content={item.content}
+            deleteClick={deleteNote}
+            updateClick={updateNote}
+            isEditable={editableId === item._id}
+            cancelUpdate={cancelUpdate}
+            saveUpdate={saveUpdate}
+          />
+        ))}
+      </div>
       <Footer />
     </div>
   );

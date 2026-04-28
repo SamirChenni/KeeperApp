@@ -29,12 +29,22 @@ header h1 {
   font-weight: 200;
 }
 
-footer {
-  position: absolute;
-  text-align: center;
+footer { 
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+  text-align: center;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Takes up full screen height */
+}
+
+/* Add this to a wrapper around your notes */
+.notes-wrapper {
+  flex: 1; /* This pushes the footer to the bottom of the screen if there are few notes */
 }
 
 footer p {
