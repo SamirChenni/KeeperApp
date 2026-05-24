@@ -14,10 +14,5 @@
   "type": "commonjs",
   "devDependencies": {
     "concurrently": "^9.2.1"
-  },
-  "dependencies": {
-    "passport-local-mongoose": "^9.0.1",
-    "primeicons": "^7.0.0",
-    "primereact": "^10.9.7"
   }
 }
